@@ -1,3 +1,5 @@
+/* Estilo da Seção Projetos */
+
 .project {
   margin-bottom: 20px;
   animation: fadeInUp 0.7s ease-in-out;
@@ -93,6 +95,8 @@
 .projeto-card .content .botao:hover {
   background: #ff4500;
 }
+
+/* Responsividade Básica */
 
 @media (max-width: 992px) {
   .projeto-card .content h3 {

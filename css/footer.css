@@ -85,6 +85,8 @@ footer p.copy {
   color: #ccc;
 }
 
+/* Responsividade Básica */
+
 @media (max-width: 992px) {
   footer .newsletter input[type="email"] {
     width: 70%;

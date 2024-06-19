@@ -1,3 +1,5 @@
+/* Estilo da Seção Introdução */
+
 .introducao {
   background: #e3f2fd;
   padding: 40px;
@@ -23,6 +25,8 @@
   margin-bottom: 15px;
   font-weight: 300;
 }
+
+/* Responsividade Básica */
 
 @media (max-width: 992px) {
   .introducao h2 {

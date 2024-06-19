@@ -101,7 +101,7 @@ nav {
   background: #007acc;
 }
 
-/* Adicionando efeitos de transição para hover */
+/* Efeitos de transição para hover */
 .nav-links a:hover::before {
   content: "";
   position: absolute;
@@ -113,6 +113,8 @@ nav {
   z-index: -1;
   transition: all 0.3s ease;
 }
+
+/* Responsividade básica */
 
 @media (max-width: 992px) {
   .nav-links {

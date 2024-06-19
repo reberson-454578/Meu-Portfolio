@@ -25,6 +25,8 @@ h2 {
   padding: 20px 0;
 }
 
+/* Responsividade Básica */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -44,6 +46,8 @@ h2 {
     display: block;
   }
 }
+
+/* Estilizações Gerais */
 
 main section {
   margin: 20px 0;
@@ -119,24 +123,6 @@ button {
 }
 
 button:hover {
-  background: #ff4500;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Botões no Formulário de Contato */
-.contato-form button {
-  background: #ff6347;
-  color: #fff;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-.contato-form button:hover {
   background: #ff4500;
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

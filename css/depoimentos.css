@@ -1,4 +1,4 @@
-/* Estilo para Depoimentos */
+/* Estilo da Seção Depoimentos */
 #depoimentos {
   padding: 60px 0;
   background: #fff;
@@ -77,7 +77,7 @@
   color: #007acc;
 }
 
-/* Carousel Container */
+/* Carrossel Container */
 .carousel {
   position: relative;
   overflow: hidden;
@@ -101,7 +101,7 @@
   display: none;
 }
 
-/* Carousel Navigation */
+/* Navegação do Carrossel */
 .carousel-nav {
   position: absolute;
   top: 50%;
