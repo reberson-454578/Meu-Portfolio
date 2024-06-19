@@ -1,0 +1,168 @@
+/* Estilo para Depoimentos */
+#depoimentos {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.depoimentos-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.depoimentos-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.depoimentos-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.depoimentos-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.depoimentos-card .autor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.depoimentos-card .autor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.depoimentos-card .autor .info {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.depoimentos-card .autor .info .nome {
+  font-weight: 700;
+  color: #333;
+}
+
+.depoimentos-card .texto {
+  font-size: 1em;
+  color: #555;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.depoimentos-card .texto::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5em;
+  color: #007acc;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Esconde os slides que não estão ativos */
+.carousel-card:not(.current-slide) {
+  display: none;
+}
+
+/* Carousel Navigation */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.carousel-nav button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  pointer-events: all;
+  border-radius: 50%;
+}
+
+.carousel-nav button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-nav .prev {
+  left: 10px;
+}
+
+.carousel-nav .next {
+  right: 10px;
+}
+
+.carousel-nav button i {
+  font-size: 1.2em;
+}
+
+/* Animação de Entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.depoimentos-card {
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .depoimentos-card .texto {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .depoimentos-card .texto {
+    font-size: 0.8em;
+  }
+}

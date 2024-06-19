@@ -1,0 +1,266 @@
+/* responsividade.css */
+
+/* Estilos para dispositivos com largura máxima de 1200px */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-content h1 {
+    font-size: 2em;
+  }
+
+  .header-content p {
+    font-size: 1em;
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 992px */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.nav-links-show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .curriculo-section ul li {
+    padding: 15px;
+  }
+
+  .curriculo-section ul li ul li {
+    padding-left: 15px;
+  }
+
+  .projeto-card .content h3 {
+    font-size: 1.4em;
+  }
+
+  .projeto-card .content p {
+    font-size: 0.9em;
+  }
+
+  .testemunho-card .texto {
+    font-size: 0.9em;
+  }
+
+  .publicacao-card .content h3 {
+    font-size: 1.4em;
+  }
+
+  .publicacao-card .content p {
+    font-size: 0.9em;
+  }
+
+  .contato-form {
+    gap: 15px;
+  }
+
+  .contato-form input,
+  .contato-form textarea,
+  .contato-form select {
+    padding: 10px;
+  }
+
+  .contato-form button {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+
+  footer .col {
+    margin: 10px;
+  }
+
+  footer .newsletter input[type="email"] {
+    width: 70%;
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .introducao h2 {
+    font-size: 2em;
+  }
+
+  .introducao p {
+    font-size: 1em;
+  }
+
+  .curriculo-section h3 {
+    font-size: 1.5em;
+    padding-left: 2em;
+  }
+
+  .curriculo-section ul li {
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .icon-curriculo {
+    flex-wrap: wrap;
+  }
+
+  .curriculo-section ul li ul li {
+    padding-left: 10px;
+  }
+
+  .projetos-section {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-card .content h3 {
+    font-size: 1.3em;
+  }
+
+  .projeto-card .content p {
+    font-size: 0.8em;
+  }
+
+  .projeto-card img {
+    display: none;
+  }
+
+  .testemunho-card .texto {
+    font-size: 0.8em;
+  }
+
+  .publicacao-card .content h3 {
+    font-size: 1.3em;
+  }
+
+  .publicacao-card .content p {
+    font-size: 0.8em;
+  }
+
+  .contato-form {
+    gap: 10px;
+  }
+
+  .contato-form input,
+  .contato-form textarea,
+  .contato-form select {
+    padding: 10px;
+  }
+
+  .contato-form button {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .col {
+    margin: 10px 0;
+  }
+
+  footer .newsletter input[type="email"] {
+    width: 80%;
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 576px */
+@media (max-width: 576px) {
+  .nav-container {
+    align-items: center;
+  }
+
+  .introducao h2 {
+    font-size: 1.8em;
+  }
+
+  .introducao p {
+    font-size: 0.9em;
+  }
+
+  .curriculo-section h3 {
+    font-size: 1.3em;
+  }
+
+  .curriculo-section ul li {
+    padding: 10px;
+  }
+
+  .curriculo-section ul li ul li {
+    padding-left: 5px;
+  }
+
+  .projetos-section {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-card .content h3 {
+    font-size: 1.2em;
+  }
+
+  .projeto-card .content p {
+    font-size: 0.7em;
+  }
+
+  .testemunho-card .texto {
+    font-size: 0.7em;
+  }
+
+  .publicacao-card .content h3 {
+    font-size: 1.2em;
+  }
+
+  .publicacao-card .content p {
+    font-size: 0.7em;
+  }
+
+  .contato-form {
+    gap: 5px;
+  }
+
+  .contato-form input,
+  .contato-form textarea,
+  .contato-form select {
+    width: 100%;
+  }
+
+  .contato-form .mensagem.sucesso {
+    width: 100%;
+  }
+
+  .contato-form .mensagem.erro {
+    width: 100%;
+  }
+
+  .contato-form input::placeholder {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contato-form button {
+    padding: 8px;
+    font-size: 0.9em;
+    width: 60%;
+  }
+
+  footer .col {
+    margin: 5px 0;
+  }
+
+  footer .newsletter input[type="email"] {
+    width: 90%;
+  }
+}

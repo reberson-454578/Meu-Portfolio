@@ -1,0 +1,119 @@
+.project {
+  margin-bottom: 20px;
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  color: #007acc;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  font-weight: 700;
+}
+
+.project p {
+  font-size: 1.1em;
+  color: #666666;
+  font-weight: 300;
+}
+
+.project:hover h3 {
+  color: #ff6347;
+}
+
+/* Layout de Grade para Projetos */
+.projetos-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.projeto-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projeto-card .content {
+  padding: 20px;
+}
+
+.projeto-card .content h3 {
+  font-size: 1.5em;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.projeto-card .content p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.projeto-card .content .tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.projeto-card .content .tecnologia {
+  background: #007acc;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.projeto-card .content .botao {
+  background: #ff6347;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.projeto-card .content .botao:hover {
+  background: #ff4500;
+}
+
+@media (max-width: 992px) {
+  .projeto-card .content h3 {
+    font-size: 1.3em;
+  }
+
+  .projeto-card .content p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .projetos-section {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-card .content h3 {
+    font-size: 1.2em;
+  }
+
+  .projeto-card .content p {
+    font-size: 0.8em;
+  }
+}

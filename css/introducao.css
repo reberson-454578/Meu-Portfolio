@@ -1,0 +1,45 @@
+.introducao {
+  background: #e3f2fd;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.introducao .intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introducao h2 {
+  font-size: 2.5em;
+  color: #007acc;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.introducao p {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+@media (max-width: 992px) {
+  .introducao h2 {
+    font-size: 2em;
+  }
+
+  .introducao p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .introducao h2 {
+    font-size: 1.8em;
+  }
+
+  .introducao p {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,129 @@
+nav {
+  background: #007acc;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.nav-links a:hover {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.nav-links a.active {
+  background-color: #005b9a;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+/* Navbar Links */
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+  overflow: hidden;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #ff6347;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.nav-links a:hover::before {
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Navbar Links Ativos */
+.nav-links a.active::before {
+  left: 0;
+}
+
+/* Navbar Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background: #007acc;
+}
+
+/* Adicionando efeitos de transição para hover */
+.nav-links a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.nav-links-show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,260 @@
+.curriculo-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  margin: 40px 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 122, 204, 0),
+    rgba(0, 122, 204, 0.75),
+    rgba(0, 122, 204, 0)
+  );
+}
+
+.curriculo-section h3 {
+  font-size: 1.8em;
+  color: #007acc;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.curriculo-section h3 i {
+  margin-right: 10px;
+}
+
+.curriculo-section ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.curriculo-section ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #333333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 300;
+}
+
+.curriculo-section ul li strong {
+  color: #007acc;
+  margin-right: 5px;
+}
+
+.curriculo-section ul li i {
+  margin-right: 10px;
+  color: #ff6347;
+}
+
+.curriculo-section ul ul {
+  padding-left: 0;
+}
+
+/* Títulos com Ícones e Cores Diferentes */
+.curriculo-section h3 {
+  font-size: 1.8em;
+  color: #007acc;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.curriculo-section h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #ff6347;
+  transform: translateX(-50%);
+}
+
+.curriculo-section h3 i {
+  margin-right: 10px;
+}
+
+/* Card Style para Experiência */
+.curriculo-section ul li {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.curriculo-section ul li:hover {
+  transform: translateY(-5px);
+}
+
+.curriculo-section ul li ul {
+  margin-top: 10px;
+}
+
+/* Destaque das Datas */
+.curriculo-section ul li strong {
+  color: #007acc;
+  font-weight: 700;
+}
+
+/* Bullet Points Customizados */
+.curriculo-section ul li ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.curriculo-section ul li ul li::before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007acc;
+}
+
+/* Certificados e Diplomas */
+.educacao .certificado {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.educacao .certificado img {
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+/* Timeline para Educação */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #007acc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  width: 45%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 55%;
+}
+
+.timeline-item::before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: white;
+  border: 4px solid #007acc;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: auto;
+  left: -12px;
+}
+
+/* Barras de Progresso para Habilidades */
+.skills .skill {
+  margin-bottom: 20px;
+}
+
+.skills .skill .skill-name {
+  font-size: 1.1em;
+  color: #007acc;
+  margin-bottom: 5px;
+}
+
+.skills .skill .progress-bar {
+  background: #e3f2fd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill .progress-bar .progress {
+  height: 100%;
+  background: #007acc;
+  transition: width 0.6s ease;
+}
+
+@media (max-width: 992px) {
+  .curriculo-section h3 {
+    font-size: 1.5em;
+  }
+
+  .curriculo-section ul li {
+    padding: 15px;
+  }
+
+  .curriculo-section ul li ul li {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .curriculo-section h3 {
+    font-size: 1.3em;
+  }
+
+  .curriculo-section ul li {
+    padding: 10px;
+  }
+
+  .curriculo-section ul li ul li {
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,87 @@
+/* Layout de Grade para Publicações */
+.publicacoes-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.publicacao-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.publicacao-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.publicacao-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.publicacao-card .content {
+  padding: 20px;
+}
+
+.publicacao-card .content h3 {
+  font-size: 1.5em;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.publicacao-card .content p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.publicacao-card .content .data {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.publicacao-card .content .botao {
+  background: #ff6347;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.publicacao-card .content .botao:hover {
+  background: #ff4500;
+}
+
+@media (max-width: 992px) {
+  .publicacao-card .content h3 {
+    font-size: 1.3em;
+  }
+
+  .publicacao-card .content p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .publicacoes-section {
+    grid-template-columns: 1fr;
+  }
+
+  .publicacao-card .content h3 {
+    font-size: 1.2em;
+  }
+
+  .publicacao-card .content p {
+    font-size: 0.8em;
+  }
+}
